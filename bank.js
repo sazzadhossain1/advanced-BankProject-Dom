@@ -65,3 +65,18 @@ document.querySelector(".btn--close-cookie").addEventListener("click", () => {
   // massage.remove();
   massage.parentElement.removeChild(massage);
 });
+
+// Apply Css Style
+massage.style.backgroundColor = "black";
+massage.style.width = "103%";
+
+console.log(massage.style.color);
+console.log(massage.style.backgroundColor);
+
+console.log(getComputedStyle(massage).color);
+console.log(getComputedStyle(massage).height);
+
+massage.style.height =
+  Number.parseFloat(getComputedStyle(massage).height, 10) + 30 + "px";
+
+document.documentElement.style.setProperty("--color-primary", "orangered");
