@@ -59,3 +59,9 @@ header.append(massage);
 
 // header.before(massage);
 // header.after(massage);
+
+// Delete Elements
+document.querySelector(".btn--close-cookie").addEventListener("click", () => {
+  // massage.remove();
+  massage.parentElement.removeChild(massage);
+});
